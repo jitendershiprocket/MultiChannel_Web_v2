@@ -1,0 +1,81 @@
+<!-- START Top Navbar-->
+<nav class="navbar topnavbar" role="navigation">
+   <!-- START navbar header-->
+   <div class="navbar-header">
+      <a class="navbar-brand ml-10" href="#/">
+         <img class="img-fluid" src="assets/img/logo-v1-2.png" alt="App Logo" />
+      </a>
+   </div>
+   <!-- END navbar header-->
+   <!-- START Left navbar-->
+   <ul class="navbar-nav mr-auto flex-row">
+      <li class="nav-item">
+         <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
+         <a class="nav-link d-none d-md-block d-lg-block d-xl-block" trigger-resize="" (click)="toggleCollapsedSideabar()"
+            *ngIf="!isCollapsedText()">
+            <em class="fas fa-bars"></em>
+         </a>
+         <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->
+         <a class="nav-link sidebar-toggle d-md-none" (click)="settings.toggleLayoutSetting('asideToggled'); $event.stopPropagation()">
+            <em class="fas fa-bars"></em>
+         </a>
+      </li>
+   </ul>
+   <!-- END Left navbar-->
+   <!-- START Right Navbar-->
+   <ul class="navbar-nav flex-row">
+      <!-- START Alert menu-->
+      <li class="nav-item dropdown dropdown-list" dropdown>
+         <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" dropdownToggle>
+            <em class="fa fa-user-circle fa-2x"></em> 
+         </a>
+         <!-- START Dropdown menu-->
+         <div *dropdownMenu class="dropdown-menu dropdown-menu-right animated flipInX">
+            <div class="dropdown-item">
+               <!-- START list group-->
+               <div class="list-group">
+                  <!-- list item-->
+                  <div class="list-group-item list-group-item-action">
+                     <div class="media">
+                        <div class="align-self-start mr-2">
+                           <em class="fa fa-user fa-2x text-info"></em>
+                        </div>
+                        <div class="media-body">
+                           <p class="m-0">Profile</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- list item-->
+                  <div class="list-group-item list-group-item-action">
+                     <div class="media">
+                        <div class="align-self-start mr-2">
+                           <em class="fa fa-tasks fa-2x text-success"></em>
+                        </div>
+                        <div class="media-body">
+                           <p class="m-0">Activities</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- list item-->
+                  <div class="list-group-item list-group-item-action">
+                     <div class="media">
+                        <div class="align-self-start mr-2">
+                           <em class="fa fa-power-off fa-2x text-warning"></em>
+                        </div>
+                        <div class="media-body">
+                           <p class="m-0">Logout</p>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <!-- END list group-->
+            </div>
+         </div>
+         <!-- END Dropdown menu-->
+      </li>
+      <!-- END Alert menu-->
+   </ul>
+   <!-- END Right Navbar-->
+</nav>
+<!-- END Top Navbar-->

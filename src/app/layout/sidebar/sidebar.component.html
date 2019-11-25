@@ -1,0 +1,44 @@
+<!-- START Sidebar (left)-->
+<div class="aside-inner">
+    <nav class="sidebar" sidebar-anyclick-close="" [class.show-scrollbar]="settings.getLayoutSetting('asideScrollbar')">
+
+        <!-- START sidebar nav-->
+        <ul class="sidebar-nav">
+
+            <!-- START user info-->
+            <!-- END user info-->
+
+            <li *ngFor='let item of menuItems; index as i' [ngClass]="{'nav-heading': item.heading}" [routerLinkActive]="['active']">
+                <!-- single menu item -->
+                <a href *ngIf="!item.heading && !item.submenu && !item.elink" [routerLink]="item.sref" [attr.route]="item.sref"
+                    title="{{item.text}}" (click)="toggleSubmenuClick($event)" (mouseenter)="toggleSubmenuHover($event)">
+                    <span class="float-right" *ngIf="item.alert" [ngClass]="item.label || 'badge badge-success'">{{item.alert}}</span>
+                    <em class="{{item.icon}}" *ngIf="item.icon"></em>
+                    <span>{{ item.text}}</span>
+                </a>
+                <!-- has submenu -->
+                <a href *ngIf="!item.heading && item.submenu" title="{{item.text}}" (click)="toggleSubmenuClick($event)"  (mouseenter)="toggleSubmenuHover($event)">
+                    <span class="float-right" *ngIf="item.alert" [ngClass]="item.label || 'badge badge-success'">{{item.alert}}</span>
+                    <em class="{{item.icon}}" *ngIf="item.icon"></em>
+                    <span>{{ item.text}}</span>
+                </a>
+                <!-- SUBLEVEL -->
+                <ul *ngIf="item.submenu" class="sidebar-nav sidebar-subnav" [routerLinkActive]="['opening']">
+                    <li *ngFor='let subitem of item.submenu' [routerLinkActive]="['active']">
+                        
+                        <!-- sublevel: single menu item  -->
+                        <a *ngIf="!subitem.submenu && !subitem.elink" [routerLink]="subitem.url" [attr.route]="subitem.url"
+                            title="{{subitem.text}}">
+                            <span class="float-right" *ngIf="subitem.alert" [ngClass]="subitem.label || 'badge badge-success'">{{subitem.alert}}</span>
+                            <em class="{{subitem.icon}}" *ngIf="subitem.icon"></em>
+                            <span>{{subitem.text}}</span>
+                        </a>
+                    <li>
+                </ul>
+            </li>
+        </ul>
+        <!-- END sidebar nav-->
+
+    </nav>
+</div>
+<!-- END Sidebar (left)-->

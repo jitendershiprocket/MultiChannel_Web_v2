@@ -1,0 +1,1428 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>angle documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">angle documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SidebarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/layout/sidebar/sidebar.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-sidebar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./sidebar.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./sidebar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#$doc">$doc</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#injector">injector</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#menu">menu</a>
+                            </li>
+                            <li>
+                                <a href="#menuItems">menuItems</a>
+                            </li>
+                            <li>
+                                <a href="#router">router</a>
+                            </li>
+                            <li>
+                                <a href="#sbclickEvent">sbclickEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#settings">settings</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#anyClickClose">anyClickClose</a>
+                            </li>
+                            <li>
+                                <a href="#closeMenu">closeMenu</a>
+                            </li>
+                            <li>
+                                <a href="#isEnabledHover">isEnabledHover</a>
+                            </li>
+                            <li>
+                                <a href="#isSidebarCollapsed">isSidebarCollapsed</a>
+                            </li>
+                            <li>
+                                <a href="#isSidebarCollapsedText">isSidebarCollapsedText</a>
+                            </li>
+                            <li>
+                                <a href="#listenForExternalClicks">listenForExternalClicks</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#removeFloatingNav">removeFloatingNav</a>
+                            </li>
+                            <li>
+                                <a href="#toggleSubmenuClick">toggleSubmenuClick</a>
+                            </li>
+                            <li>
+                                <a href="#toggleSubmenuHover">toggleSubmenuHover</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(menu: <a href="../injectables/MenuService.html">MenuService</a>, settings: <a href="../injectables/SettingsService.html">SettingsService</a>, injector: <a href="https://angular.io/api/core/Injector" target="_blank">Injector</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>menu</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MenuService.html" target="_self" >MenuService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>settings</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SettingsService.html" target="_self" >SettingsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>injector</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Injector" target="_blank" >Injector</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="anyClickClose"></a>
+                    <span class="name">
+                        <b>
+                            anyClickClose
+                        </b>
+                        <a href="#anyClickClose"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>anyClickClose()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeMenu"></a>
+                    <span class="name">
+                        <b>
+                            closeMenu
+                        </b>
+                        <a href="#closeMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeMenu(elem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>elem</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isEnabledHover"></a>
+                    <span class="name">
+                        <b>
+                            isEnabledHover
+                        </b>
+                        <a href="#isEnabledHover"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isEnabledHover()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="178"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:178</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isSidebarCollapsed"></a>
+                    <span class="name">
+                        <b>
+                            isSidebarCollapsed
+                        </b>
+                        <a href="#isSidebarCollapsed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isSidebarCollapsed()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isSidebarCollapsedText"></a>
+                    <span class="name">
+                        <b>
+                            isSidebarCollapsedText
+                        </b>
+                        <a href="#isSidebarCollapsedText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isSidebarCollapsedText()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:175</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listenForExternalClicks"></a>
+                    <span class="name">
+                        <b>
+                            listenForExternalClicks
+                        </b>
+                        <a href="#listenForExternalClicks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listenForExternalClicks()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="159"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeFloatingNav"></a>
+                    <span class="name">
+                        <b>
+                            removeFloatingNav
+                        </b>
+                        <a href="#removeFloatingNav"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeFloatingNav()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleSubmenuClick"></a>
+                    <span class="name">
+                        <b>
+                            toggleSubmenuClick
+                        </b>
+                        <a href="#toggleSubmenuClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleSubmenuClick(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleSubmenuHover"></a>
+                    <span class="name">
+                        <b>
+                            toggleSubmenuHover
+                        </b>
+                        <a href="#toggleSubmenuHover"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleSubmenuHover(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="$doc"></a>
+                        <span class="name">
+                            <b>
+                            $doc</b>
+                            <a href="#$doc"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="injector"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            injector</b>
+                            <a href="#injector"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/Injector" target="_blank" >Injector</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="menu"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            menu</b>
+                            <a href="#menu"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/MenuService.html" target="_self" >MenuService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="menuItems"></a>
+                        <span class="name">
+                            <b>
+                            menuItems</b>
+                            <a href="#menuItems"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="router"></a>
+                        <span class="name">
+                            <b>
+                            router</b>
+                            <a href="#router"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sbclickEvent"></a>
+                        <span class="name">
+                            <b>
+                            sbclickEvent</b>
+                            <a href="#sbclickEvent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;click.sidebar-toggle&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="settings"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            settings</b>
+                            <a href="#settings"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/SettingsService.html" target="_self" >SettingsService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/layout/sidebar/sidebar.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Injector, OnDestroy } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+declare var $: any;
+
+import { MenuService } from &#x27;../../core/menu/menu.service&#x27;;
+import { SettingsService } from &#x27;../../core/settings/settings.service&#x27;;
+
+@Component({
+    selector: &#x27;app-sidebar&#x27;,
+    templateUrl: &#x27;./sidebar.component.html&#x27;,
+    styleUrls: [&#x27;./sidebar.component.scss&#x27;]
+})
+export class SidebarComponent implements OnInit, OnDestroy {
+
+    menuItems: Array&lt;any&gt;;
+    router: Router;
+    sbclickEvent &#x3D; &#x27;click.sidebar-toggle&#x27;;
+    $doc: any &#x3D; null;
+
+    constructor(public menu: MenuService, public settings: SettingsService, public injector: Injector) {
+
+        this.menuItems &#x3D; menu.getMenu();
+
+    }
+
+    ngOnInit() {
+
+        this.router &#x3D; this.injector.get(Router);
+
+        this.router.events.subscribe((val) &#x3D;&gt; {
+            // close any submenu opened when route changes
+            this.removeFloatingNav();
+            // scroll view to top
+            window.scrollTo(0, 0);
+            // close sidebar on route change
+            this.settings.setLayoutSetting(&#x27;asideToggled&#x27;, false);
+        });
+
+        // enable sidebar autoclose from extenal clicks
+        this.anyClickClose();
+
+    }
+
+    anyClickClose() {
+        this.$doc &#x3D; $(document).on(this.sbclickEvent, (e) &#x3D;&gt; {
+            if (!$(e.target).parents(&#x27;.aside-container&#x27;).length) {
+                this.settings.setLayoutSetting(&#x27;asideToggled&#x27;, false);
+            }
+        });
+    }
+
+    ngOnDestroy() {
+        if (this.$doc)
+            this.$doc.off(this.sbclickEvent);
+    }
+
+    toggleSubmenuClick(event) {
+
+        event.preventDefault();
+
+        if (!this.isSidebarCollapsed() &amp;&amp; !this.isSidebarCollapsedText() &amp;&amp; !this.isEnabledHover()) {
+
+            let ul &#x3D; $(event.currentTarget.nextElementSibling);
+
+            // hide other submenus
+            let parentNav &#x3D; ul.parents(&#x27;.sidebar-subnav&#x27;);
+            $(&#x27;.sidebar-subnav&#x27;).each((idx, el) &#x3D;&gt; {
+                let $el &#x3D; $(el);
+                // if element is not a parent or self ul
+                if (el !&#x3D;&#x3D; parentNav[0] &amp;&amp; el !&#x3D;&#x3D; ul[0]) {
+                    this.closeMenu($el);
+                }
+            });
+
+            // abort if not UL to process
+            if (!ul.length) {
+                return;
+            }
+
+            // any child menu should start closed
+            ul.find(&#x27;.sidebar-subnav&#x27;).each((idx, el) &#x3D;&gt; {
+                this.closeMenu($(el));
+            });
+
+            // toggle UL height
+            const ulHeight &#x3D; ul.css(&#x27;height&#x27;)
+            if (ulHeight &#x3D;&#x3D;&#x3D; &#x27;auto&#x27; || parseInt(ulHeight, 10)) {
+                this.closeMenu(ul);
+            }
+            else {
+                // expand menu
+                ul.on(&#x27;transitionend&#x27;, () &#x3D;&gt; {
+                    ul.css(&#x27;height&#x27;, &#x27;auto&#x27;).off(&#x27;transitionend&#x27;);
+                }).css(&#x27;height&#x27;, ul[0].scrollHeight);
+                // add class to manage animation
+                ul.addClass(&#x27;opening&#x27;);
+            }
+
+        }
+
+    }
+
+    // Close menu collapsing height
+    closeMenu(elem) {
+        elem.css(&#x27;height&#x27;, elem[0].scrollHeight); // set height
+        elem.css(&#x27;height&#x27;, 0); // and move to zero to collapse
+        elem.removeClass(&#x27;opening&#x27;);
+    }
+
+    toggleSubmenuHover(event) {
+        let self &#x3D; this;
+        if (this.isSidebarCollapsed() || this.isSidebarCollapsedText() || this.isEnabledHover()) {
+            event.preventDefault();
+
+            this.removeFloatingNav();
+
+            let ul &#x3D; $(event.currentTarget.nextElementSibling);
+            let anchor &#x3D; $(event.currentTarget);
+
+            if (!ul.length) {
+                return; // if not submenu return
+            }
+
+            let $aside &#x3D; $(&#x27;.aside-container&#x27;);
+            let $asideInner &#x3D; $aside.children(&#x27;.aside-inner&#x27;); // for top offset calculation
+            let $sidebar &#x3D; $asideInner.children(&#x27;.sidebar&#x27;);
+            let mar &#x3D; parseInt($asideInner.css(&#x27;padding-top&#x27;), 0) + parseInt($aside.css(&#x27;padding-top&#x27;), 0);
+            let itemTop &#x3D; ((anchor.parent().position().top) + mar) - $sidebar.scrollTop();
+
+            let floatingNav &#x3D; ul.clone().appendTo($aside);
+            let vwHeight &#x3D; document.body.clientHeight;
+
+            // let itemTop &#x3D; anchor.position().top || anchor.offset().top;
+
+            floatingNav
+                .removeClass(&#x27;opening&#x27;) // necesary for demo if switched between normal//collapsed mode
+                .addClass(&#x27;nav-floating&#x27;)
+                .css({
+                    position: this.settings.getLayoutSetting(&#x27;isFixed&#x27;) ? &#x27;fixed&#x27; : &#x27;absolute&#x27;,
+                    top: itemTop,
+                    bottom: (floatingNav.outerHeight(true) + itemTop &gt; vwHeight) ? 0 : &#x27;auto&#x27;
+                });
+
+            floatingNav
+                .on(&#x27;mouseleave&#x27;, () &#x3D;&gt; { floatingNav.remove(); })
+                .find(&#x27;a&#x27;).on(&#x27;click&#x27;, function(e) {
+                    e.preventDefault(); // prevents page reload on click
+                    // get the exact route path to navigate
+                    let routeTo &#x3D; $(this).attr(&#x27;route&#x27;);
+                    if (routeTo) self.router.navigate([routeTo]);
+                });
+
+            this.listenForExternalClicks();
+
+        }
+
+    }
+
+    listenForExternalClicks() {
+        let $doc &#x3D; $(document).on(&#x27;click.sidebar&#x27;, (e) &#x3D;&gt; {
+            if (!$(e.target).parents(&#x27;.aside-container&#x27;).length) {
+                this.removeFloatingNav();
+                $doc.off(&#x27;click.sidebar&#x27;);
+            }
+        });
+    }
+
+    removeFloatingNav() {
+        $(&#x27;.nav-floating&#x27;).remove();
+    }
+
+    isSidebarCollapsed() {
+        return this.settings.getLayoutSetting(&#x27;isCollapsed&#x27;);
+    }
+    isSidebarCollapsedText() {
+        return this.settings.getLayoutSetting(&#x27;isCollapsedText&#x27;);
+    }
+    isEnabledHover() {
+        return this.settings.getLayoutSetting(&#x27;asideHover&#x27;);
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- START Sidebar (left)--&gt;
+&lt;div class&#x3D;&quot;aside-inner&quot;&gt;
+    &lt;nav class&#x3D;&quot;sidebar&quot; sidebar-anyclick-close&#x3D;&quot;&quot; [class.show-scrollbar]&#x3D;&quot;settings.getLayoutSetting(&#x27;asideScrollbar&#x27;)&quot;&gt;
+
+        &lt;!-- START sidebar nav--&gt;
+        &lt;ul class&#x3D;&quot;sidebar-nav&quot;&gt;
+
+            &lt;!-- START user info--&gt;
+            &lt;!-- END user info--&gt;
+
+            &lt;li *ngFor&#x3D;&#x27;let item of menuItems&#x27; [ngClass]&#x3D;&quot;{&#x27;nav-heading&#x27;: item.heading}&quot; [routerLinkActive]&#x3D;&quot;[&#x27;active&#x27;]&quot;&gt;
+                &lt;!-- menu heading --&gt;
+                &lt;span *ngIf&#x3D;&quot;item.heading&quot;&gt;{{item.text}}&lt;/span&gt;
+                &lt;!-- external links --&gt;
+                &lt;a href *ngIf&#x3D;&quot;!item.heading &amp;&amp; !item.submenu &amp;&amp; item.elink&quot; [attr.target]&#x3D;&quot;item.target&quot; [attr.href]&#x3D;&quot;item.elink&quot;
+                    title&#x3D;&quot;{{item.text}}&quot;&gt;
+                    &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;item.alert&quot; [ngClass]&#x3D;&quot;item.label || &#x27;badge badge-success&#x27;&quot;&gt;{{item.alert}}&lt;/span&gt;
+                    &lt;em class&#x3D;&quot;{{item.icon}}&quot; *ngIf&#x3D;&quot;item.icon&quot;&gt;&lt;/em&gt;
+                    &lt;span&gt;{{ item.text}}&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;!-- single menu item --&gt;
+                &lt;a href *ngIf&#x3D;&quot;!item.heading &amp;&amp; !item.submenu &amp;&amp; !item.elink&quot; [routerLink]&#x3D;&quot;item.link&quot; [attr.route]&#x3D;&quot;item.link&quot;
+                    title&#x3D;&quot;{{item.text}}&quot; (click)&#x3D;&quot;toggleSubmenuClick($event)&quot; (mouseenter)&#x3D;&quot;toggleSubmenuHover($event)&quot;&gt;
+                    &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;item.alert&quot; [ngClass]&#x3D;&quot;item.label || &#x27;badge badge-success&#x27;&quot;&gt;{{item.alert}}&lt;/span&gt;
+                    &lt;em class&#x3D;&quot;{{item.icon}}&quot; *ngIf&#x3D;&quot;item.icon&quot;&gt;&lt;/em&gt;
+                    &lt;span&gt;{{ item.text}}&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;!-- has submenu --&gt;
+                &lt;a href *ngIf&#x3D;&quot;!item.heading &amp;&amp; item.submenu&quot; title&#x3D;&quot;{{item.text}}&quot; (click)&#x3D;&quot;toggleSubmenuClick($event)&quot;  (mouseenter)&#x3D;&quot;toggleSubmenuHover($event)&quot;&gt;
+                    &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;item.alert&quot; [ngClass]&#x3D;&quot;item.label || &#x27;badge badge-success&#x27;&quot;&gt;{{item.alert}}&lt;/span&gt;
+                    &lt;em class&#x3D;&quot;{{item.icon}}&quot; *ngIf&#x3D;&quot;item.icon&quot;&gt;&lt;/em&gt;
+                    &lt;span&gt;{{ item.text}}&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;!-- SUBLEVEL --&gt;
+                &lt;ul *ngIf&#x3D;&quot;item.submenu&quot; class&#x3D;&quot;sidebar-nav sidebar-subnav&quot; [routerLinkActive]&#x3D;&quot;[&#x27;opening&#x27;]&quot;&gt;
+                    &lt;li class&#x3D;&quot;sidebar-subnav-header&quot;&gt;{{ item.text}}&lt;/li&gt;
+                    &lt;li *ngFor&#x3D;&#x27;let subitem of item.submenu&#x27; [routerLinkActive]&#x3D;&quot;[&#x27;active&#x27;]&quot;&gt;
+                        &lt;!-- sublevel: external links --&gt;
+                        &lt;a href *ngIf&#x3D;&quot;!subitem.heading &amp;&amp; !subitem.submenu &amp;&amp; subitem.elink&quot; [attr.target]&#x3D;&quot;subitem.target&quot;
+                            [attr.href]&#x3D;&quot;subitem.elink&quot; title&#x3D;&quot;{{subitem.text}}&quot;&gt;
+                            &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;subitem.alert&quot; [ngClass]&#x3D;&quot;subitem.label || &#x27;badge badge-success&#x27;&quot;&gt;{{subitem.alert}}&lt;/span&gt;
+                            &lt;em class&#x3D;&quot;{{subitem.icon}}&quot; *ngIf&#x3D;&quot;subitem.icon&quot;&gt;&lt;/em&gt;
+                            &lt;span&gt;{{ subitem.text}}&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;!-- sublevel: single menu item  --&gt;
+                        &lt;a href *ngIf&#x3D;&quot;!subitem.submenu &amp;&amp; !subitem.elink&quot; [routerLink]&#x3D;&quot;subitem.link&quot; [attr.route]&#x3D;&quot;subitem.link&quot;
+                            title&#x3D;&quot;{{subitem.text}}&quot;&gt;
+                            &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;subitem.alert&quot; [ngClass]&#x3D;&quot;subitem.label || &#x27;badge badge-success&#x27;&quot;&gt;{{subitem.alert}}&lt;/span&gt;
+                            &lt;em class&#x3D;&quot;{{subitem.icon}}&quot; *ngIf&#x3D;&quot;subitem.icon&quot;&gt;&lt;/em&gt;
+                            &lt;span&gt;{{subitem.text}}&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;!-- sublevel: has submenu --&gt;
+                        &lt;a href *ngIf&#x3D;&quot;subitem.submenu&quot; title&#x3D;&quot;{{subitem.text}}&quot; (click)&#x3D;&quot;toggleSubmenuClick($event)&quot;
+                            (mouseenter)&#x3D;&quot;toggleSubmenuHover($event)&quot;&gt;
+                            &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;subitem.alert&quot; [ngClass]&#x3D;&quot;subitem.label || &#x27;badge badge-success&#x27;&quot;&gt;{{subitem.alert}}&lt;/span&gt;
+                            &lt;em class&#x3D;&quot;{{subitem.icon}}&quot; *ngIf&#x3D;&quot;subitem.icon&quot;&gt;&lt;/em&gt;
+                            &lt;span&gt;{{subitem.text}}&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;!-- SUBLEVEL 2 --&gt;
+                        &lt;ul *ngIf&#x3D;&quot;subitem.submenu&quot; class&#x3D;&quot;sidebar-nav sidebar-subnav level2&quot; [routerLinkActive]&#x3D;&quot;[&#x27;opening&#x27;]&quot;&gt;
+                            &lt;li *ngFor&#x3D;&#x27;let subitem2 of subitem.submenu&#x27; [routerLinkActive]&#x3D;&quot;[&#x27;active&#x27;]&quot;&gt;
+                                &lt;!-- sublevel 2: single menu item  --&gt;
+                                &lt;a href *ngIf&#x3D;&quot;!subitem2.submenu&quot; [routerLink]&#x3D;&quot;subitem2.link&quot; [attr.route]&#x3D;&quot;subitem2.link&quot;
+                                    title&#x3D;&quot;{{subitem2.text}}&quot;&gt;
+                                    &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;subitem2.alert&quot; [ngClass]&#x3D;&quot;subitem2.label || &#x27;badge badge-success&#x27;&quot;&gt;{{subitem2.alert}}&lt;/span&gt;
+                                    &lt;em class&#x3D;&quot;{{subitem2.icon}}&quot; *ngIf&#x3D;&quot;subitem2.icon&quot;&gt;&lt;/em&gt;
+                                    &lt;span&gt;{{subitem2.text}}&lt;/span&gt;
+                                &lt;/a&gt;
+                                &lt;!-- sublevel2: has submenu --&gt;
+                                &lt;a href *ngIf&#x3D;&quot;subitem2.submenu&quot; title&#x3D;&quot;{{subitem2.text}}&quot; (click)&#x3D;&quot;toggleSubmenuClick($event)&quot;
+                                    (mouseenter)&#x3D;&quot;toggleSubmenuHover($event)&quot;&gt;
+                                    &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;subitem2.alert&quot; [ngClass]&#x3D;&quot;subitem2.label || &#x27;badge badge-success&#x27;&quot;&gt;{{subitem2.alert}}&lt;/span&gt;
+                                    &lt;em class&#x3D;&quot;{{subitem2.icon}}&quot; *ngIf&#x3D;&quot;subitem2.icon&quot;&gt;&lt;/em&gt;
+                                    &lt;span&gt;{{subitem2.text}}&lt;/span&gt;
+                                &lt;/a&gt;
+                                &lt;!-- SUBLEVEL 3 --&gt;
+                                &lt;ul *ngIf&#x3D;&quot;subitem2.submenu&quot; class&#x3D;&quot;sidebar-nav sidebar-subnav level3&quot;
+                                    [routerLinkActive]&#x3D;&quot;[&#x27;opening&#x27;]&quot;&gt;
+                                    &lt;li *ngFor&#x3D;&#x27;let subitem3 of subitem2.submenu&#x27; [routerLinkActive]&#x3D;&quot;[&#x27;active&#x27;]&quot;&gt;
+                                        &lt;!-- sublevel 2: single menu item  --&gt;
+                                        &lt;a href *ngIf&#x3D;&quot;!subitem3.submenu&quot; [routerLink]&#x3D;&quot;subitem3.link&quot; [attr.route]&#x3D;&quot;subitem3.link&quot;
+                                            title&#x3D;&quot;{{subitem3.text}}&quot;&gt;
+                                            &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;subitem3.alert&quot; [ngClass]&#x3D;&quot;subitem3.label || &#x27;badge badge-success&#x27;&quot;&gt;{{subitem3.alert}}&lt;/span&gt;
+                                            &lt;em class&#x3D;&quot;{{subitem3.icon}}&quot; *ngIf&#x3D;&quot;subitem3.icon&quot;&gt;&lt;/em&gt;
+                                            &lt;span&gt;{{subitem3.text}}&lt;/span&gt;
+                                        &lt;/a&gt;
+                                        &lt;!-- sublevel3: has submenu --&gt;
+                                        &lt;a href *ngIf&#x3D;&quot;subitem3.submenu&quot; title&#x3D;&quot;{{subitem3.text}}&quot; (click)&#x3D;&quot;toggleSubmenuClick($event)&quot;
+                                            (mouseenter)&#x3D;&quot;toggleSubmenuHover($event)&quot;&gt;
+                                            &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;subitem3.alert&quot; [ngClass]&#x3D;&quot;subitem3.label || &#x27;badge badge-success&#x27;&quot;&gt;{{subitem3.alert}}&lt;/span&gt;
+                                            &lt;em class&#x3D;&quot;{{subitem3.icon}}&quot; *ngIf&#x3D;&quot;subitem3.icon&quot;&gt;&lt;/em&gt;
+                                            &lt;span&gt;{{ subitem3.text}}&lt;/span&gt;
+                                        &lt;/a&gt;
+                                        &lt;!-- SUBLEVEL 4 --&gt;
+                                        &lt;ul *ngIf&#x3D;&quot;subitem3.submenu&quot; class&#x3D;&quot;sidebar-nav sidebar-subnav level3&quot;
+                                            [routerLinkActive]&#x3D;&quot;[&#x27;opening&#x27;]&quot;&gt;
+                                            &lt;li *ngFor&#x3D;&#x27;let subitem4 of subitem3.submenu&#x27; [routerLinkActive]&#x3D;&quot;[&#x27;active&#x27;]&quot;&gt;
+                                                &lt;!-- sublevel 2: single menu item  --&gt;
+                                                &lt;a href *ngIf&#x3D;&quot;!subitem4.submenu&quot; [routerLink]&#x3D;&quot;subitem4.link&quot;
+                                                    [attr.route]&#x3D;&quot;subitem4.link&quot; title&#x3D;&quot;{{subitem4.text}}&quot;&gt;
+                                                    &lt;span class&#x3D;&quot;float-right&quot; *ngIf&#x3D;&quot;subitem4.alert&quot; [ngClass]&#x3D;&quot;subitem4.label || &#x27;badge badge-success&#x27;&quot;&gt;{{subitem4.alert}}&lt;/span&gt;
+                                                    &lt;em class&#x3D;&quot;{{subitem4.icon}}&quot; *ngIf&#x3D;&quot;subitem4.icon&quot;&gt;&lt;/em&gt;
+                                                    &lt;span&gt;{{subitem4.text}}&lt;/span&gt;
+                                                &lt;/a&gt;
+                                            &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;li&gt;
+                        &lt;/ul&gt;
+                    &lt;li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+
+        &lt;/ul&gt;
+        &lt;!-- END sidebar nav--&gt;
+
+    &lt;/nav&gt;
+&lt;/div&gt;
+&lt;!-- END Sidebar (left)--&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./sidebar.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- START Sidebar (left)--><div class="aside-inner">    <nav class="sidebar" sidebar-anyclick-close="" [class.show-scrollbar]="settings.getLayoutSetting(\'asideScrollbar\')">        <!-- START sidebar nav-->        <ul class="sidebar-nav">            <!-- START user info-->            <!-- END user info-->            <li *ngFor=\'let item of menuItems\' [ngClass]="{\'nav-heading\': item.heading}" [routerLinkActive]="[\'active\']">                <!-- menu heading -->                <span *ngIf="item.heading">{{item.text}}</span>                <!-- external links -->                <a href *ngIf="!item.heading && !item.submenu && item.elink" [attr.target]="item.target" [attr.href]="item.elink"                    title="{{item.text}}">                    <span class="float-right" *ngIf="item.alert" [ngClass]="item.label || \'badge badge-success\'">{{item.alert}}</span>                    <em class="{{item.icon}}" *ngIf="item.icon"></em>                    <span>{{ item.text}}</span>                </a>                <!-- single menu item -->                <a href *ngIf="!item.heading && !item.submenu && !item.elink" [routerLink]="item.link" [attr.route]="item.link"                    title="{{item.text}}" (click)="toggleSubmenuClick($event)" (mouseenter)="toggleSubmenuHover($event)">                    <span class="float-right" *ngIf="item.alert" [ngClass]="item.label || \'badge badge-success\'">{{item.alert}}</span>                    <em class="{{item.icon}}" *ngIf="item.icon"></em>                    <span>{{ item.text}}</span>                </a>                <!-- has submenu -->                <a href *ngIf="!item.heading && item.submenu" title="{{item.text}}" (click)="toggleSubmenuClick($event)"  (mouseenter)="toggleSubmenuHover($event)">                    <span class="float-right" *ngIf="item.alert" [ngClass]="item.label || \'badge badge-success\'">{{item.alert}}</span>                    <em class="{{item.icon}}" *ngIf="item.icon"></em>                    <span>{{ item.text}}</span>                </a>                <!-- SUBLEVEL -->                <ul *ngIf="item.submenu" class="sidebar-nav sidebar-subnav" [routerLinkActive]="[\'opening\']">                    <li class="sidebar-subnav-header">{{ item.text}}</li>                    <li *ngFor=\'let subitem of item.submenu\' [routerLinkActive]="[\'active\']">                        <!-- sublevel: external links -->                        <a href *ngIf="!subitem.heading && !subitem.submenu && subitem.elink" [attr.target]="subitem.target"                            [attr.href]="subitem.elink" title="{{subitem.text}}">                            <span class="float-right" *ngIf="subitem.alert" [ngClass]="subitem.label || \'badge badge-success\'">{{subitem.alert}}</span>                            <em class="{{subitem.icon}}" *ngIf="subitem.icon"></em>                            <span>{{ subitem.text}}</span>                        </a>                        <!-- sublevel: single menu item  -->                        <a href *ngIf="!subitem.submenu && !subitem.elink" [routerLink]="subitem.link" [attr.route]="subitem.link"                            title="{{subitem.text}}">                            <span class="float-right" *ngIf="subitem.alert" [ngClass]="subitem.label || \'badge badge-success\'">{{subitem.alert}}</span>                            <em class="{{subitem.icon}}" *ngIf="subitem.icon"></em>                            <span>{{subitem.text}}</span>                        </a>                        <!-- sublevel: has submenu -->                        <a href *ngIf="subitem.submenu" title="{{subitem.text}}" (click)="toggleSubmenuClick($event)"                            (mouseenter)="toggleSubmenuHover($event)">                            <span class="float-right" *ngIf="subitem.alert" [ngClass]="subitem.label || \'badge badge-success\'">{{subitem.alert}}</span>                            <em class="{{subitem.icon}}" *ngIf="subitem.icon"></em>                            <span>{{subitem.text}}</span>                        </a>                        <!-- SUBLEVEL 2 -->                        <ul *ngIf="subitem.submenu" class="sidebar-nav sidebar-subnav level2" [routerLinkActive]="[\'opening\']">                            <li *ngFor=\'let subitem2 of subitem.submenu\' [routerLinkActive]="[\'active\']">                                <!-- sublevel 2: single menu item  -->                                <a href *ngIf="!subitem2.submenu" [routerLink]="subitem2.link" [attr.route]="subitem2.link"                                    title="{{subitem2.text}}">                                    <span class="float-right" *ngIf="subitem2.alert" [ngClass]="subitem2.label || \'badge badge-success\'">{{subitem2.alert}}</span>                                    <em class="{{subitem2.icon}}" *ngIf="subitem2.icon"></em>                                    <span>{{subitem2.text}}</span>                                </a>                                <!-- sublevel2: has submenu -->                                <a href *ngIf="subitem2.submenu" title="{{subitem2.text}}" (click)="toggleSubmenuClick($event)"                                    (mouseenter)="toggleSubmenuHover($event)">                                    <span class="float-right" *ngIf="subitem2.alert" [ngClass]="subitem2.label || \'badge badge-success\'">{{subitem2.alert}}</span>                                    <em class="{{subitem2.icon}}" *ngIf="subitem2.icon"></em>                                    <span>{{subitem2.text}}</span>                                </a>                                <!-- SUBLEVEL 3 -->                                <ul *ngIf="subitem2.submenu" class="sidebar-nav sidebar-subnav level3"                                    [routerLinkActive]="[\'opening\']">                                    <li *ngFor=\'let subitem3 of subitem2.submenu\' [routerLinkActive]="[\'active\']">                                        <!-- sublevel 2: single menu item  -->                                        <a href *ngIf="!subitem3.submenu" [routerLink]="subitem3.link" [attr.route]="subitem3.link"                                            title="{{subitem3.text}}">                                            <span class="float-right" *ngIf="subitem3.alert" [ngClass]="subitem3.label || \'badge badge-success\'">{{subitem3.alert}}</span>                                            <em class="{{subitem3.icon}}" *ngIf="subitem3.icon"></em>                                            <span>{{subitem3.text}}</span>                                        </a>                                        <!-- sublevel3: has submenu -->                                        <a href *ngIf="subitem3.submenu" title="{{subitem3.text}}" (click)="toggleSubmenuClick($event)"                                            (mouseenter)="toggleSubmenuHover($event)">                                            <span class="float-right" *ngIf="subitem3.alert" [ngClass]="subitem3.label || \'badge badge-success\'">{{subitem3.alert}}</span>                                            <em class="{{subitem3.icon}}" *ngIf="subitem3.icon"></em>                                            <span>{{ subitem3.text}}</span>                                        </a>                                        <!-- SUBLEVEL 4 -->                                        <ul *ngIf="subitem3.submenu" class="sidebar-nav sidebar-subnav level3"                                            [routerLinkActive]="[\'opening\']">                                            <li *ngFor=\'let subitem4 of subitem3.submenu\' [routerLinkActive]="[\'active\']">                                                <!-- sublevel 2: single menu item  -->                                                <a href *ngIf="!subitem4.submenu" [routerLink]="subitem4.link"                                                    [attr.route]="subitem4.link" title="{{subitem4.text}}">                                                    <span class="float-right" *ngIf="subitem4.alert" [ngClass]="subitem4.label || \'badge badge-success\'">{{subitem4.alert}}</span>                                                    <em class="{{subitem4.icon}}" *ngIf="subitem4.icon"></em>                                                    <span>{{subitem4.text}}</span>                                                </a>                                            </li>                                        </ul>                                    </li>                                </ul>                            <li>                        </ul>                    <li>                </ul>            </li>        </ul>        <!-- END sidebar nav-->    </nav></div><!-- END Sidebar (left)--></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'Error404Component', 'selector': 'app-error404'},{'name': 'Error500Component', 'selector': 'app-error500'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'LockComponent', 'selector': 'app-lock'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MaintenanceComponent', 'selector': 'app-maintenance'},{'name': 'OrderReportComponent', 'selector': 'app-order-report'},{'name': 'RecoverComponent', 'selector': 'app-recover'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SampleComponent', 'selector': 'app-sample'},{'name': 'Samplev1Component', 'selector': 'app-samplev1'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'}];
+    var DIRECTIVES = [{'name': 'CheckallDirective', 'selector': '[checkAll]'},{'name': 'EasypiechartDirective', 'selector': '[easypiechart]'},{'name': 'FlotDirective', 'selector': '[flot]'},{'name': 'JqcloudDirective', 'selector': '[jqcloud]'},{'name': 'NowDirective', 'selector': '[now]'},{'name': 'ScrollableDirective', 'selector': 'scrollable'},{'name': 'SparklineDirective', 'selector': '[sparkline]'},{'name': 'VectormapDirective', 'selector': '[vectormap]'}];
+    var ACTUAL_COMPONENT = {'name': 'SidebarComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SidebarComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
