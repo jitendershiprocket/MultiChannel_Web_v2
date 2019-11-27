@@ -1,6 +1,6 @@
 import { Component, OnInit, Injector, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { AppSettings } from '../../services/app-setting';
+import { AppSettings } from '../../shared/services/app-setting';
 declare var $: any;
 
 import { MenuService } from '../../core/menu/menu.service';
