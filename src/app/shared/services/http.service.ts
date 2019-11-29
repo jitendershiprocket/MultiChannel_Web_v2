@@ -6,9 +6,11 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class HttpService {
-
-  apiBaseUrl = "http://krmct000.kartrocket.com/";
-  constructor(private http: HttpClient) { }
+  private token;
+  apiBaseUrl = "http://multichannel1.api/";
+  constructor(private http: HttpClient) {
+    this.token = localStorage.satellizer_token;
+   }
 
   getQueryParam(obj): HttpParams {
     let search = new HttpParams();
@@ -20,7 +22,7 @@ export class HttpService {
 
   getHeaders(): HttpHeaders {
     let headers = new HttpHeaders({
-      'Content-Type': 'application/json'
+      'Authorization': 'Bearer ' + this.token
     });
     return headers;
   }

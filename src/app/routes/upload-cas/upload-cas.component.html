@@ -1,0 +1,51 @@
+<div class="header-wrapper">
+  <span class="type-header">{{fileUrls.headingName}}</span>
+</div>
+<div class="content">
+  <div class="p0 panel-default">
+       <div class="panel-wrapper">
+          <div class="panel-body p0">
+              <div class="col-md-8 mt-lg">
+                  <div class="form-group">
+                      <label>Upload New File</label>
+                      <div>
+                          <p ng-controller="DownloadController" id='codSample' data-name ='codSample' ng-click="downloadCSV(fileUrls.downloadFileURL, fileUrls.sampleFileName)">
+                              <a>Download Sample File</a>
+                          </p>
+                          <div class="custom-file mb-3">
+                            <input type="file" id="fileUpload" file-model="myFile" class="custom-file-input" name="fileUpload">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <button class="mb-sm btn btn-primary mr" (click)='uploadFile(fileUrls.uploadFileUrl)' type="button">Upload</button>
+                      <button class="mb-sm btn btn-danger" type="button">Cancel</button>
+                  </div>
+              </div>
+              <div class="col-md-8 mt-lg" ng-if="isCODPanel">
+                  <table class="table table-bordered">
+                      <tr ng-repeat = 'file in fileArry'>
+                          <td> sdfsdfd </td>
+                          <td>
+                              <span class="text-success">
+                                  <strong>Uploaded Successfully</strong><strong ng-if="!file.hasErrorFile">.</strong><strong ng-if="file.hasErrorFile">With Errors.</strong>
+                              </span>
+                          </td>
+                          <td class="text-center">
+                              <button class="mb-sm btn btn-primary" ng-click ='sendEmail(file.file_id)' type="button">
+                                  Send Email
+                              </button>
+                          </td>
+                          <td class="text-center" ng-if="file.hasErrorFile">
+                              <button ng-controller="DownloadController" ng-click="downloadCSV(fileUrls.downloadErrorFileUrl, '', false, 1, null, file.error_file_id)" class="mb-sm btn btn-danger" type="button">
+                                  Download Error File
+                              </button>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -21,7 +21,7 @@ $aside-bg:                                #fff;
 $content-bg:                              $body-bg;
 $content-heading-bg:                      #fafbfc;
 $content-heading-border:                  #cfdbe2;
-$content-padding:                         20px;
+$content-padding:                         0px;
 
 $footer-hg:                               60px;
 
@@ -53,6 +53,7 @@ body {
     height: auto;
     min-height: 100%;
     overflow-x: hidden;
+    background: #ededed;
     &.ng-leave {
         display: none;
     }
@@ -93,7 +94,7 @@ body {
         height: 100%;
         margin-left: 0; // overflow: hidden;
         z-index: $z-index-main-section;
-        background-color: $content-bg;
+        background-color: none;
         margin-bottom: $footer-hg !important; // ensure a space for the footer
     } // Page Footer
     .footer-container {
@@ -121,7 +122,7 @@ body {
 // Page main content
 // -----------------------------
 .content-wrapper {
-    padding: 15px;
+    padding: 0px;
     width: 100%; // styling to visually wrap the component
     border-top: 1px solid rgba(0, 0, 0, .15);
     margin-top: -1px;
@@ -476,7 +477,7 @@ body {
             }
         }
         .section-container {
-            margin-top: $navbar-hg;
+            margin-top: 46px;
         }
     }
 }

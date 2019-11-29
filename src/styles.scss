@@ -27,3 +27,20 @@
 @import "./app/shared/styles/bootstrap.scss";
 //== Application
 @import "./app/shared/styles/app.scss";
+
+
+.header-wrapper {
+    clear: both;
+    margin: 0;
+    background-color: #fafbfc;
+    border-bottom: 1px solid #b3b3b3!important;
+    padding: 15px 10px 5px;
+    color: #212121;
+}
+.type-header {
+    color: #292929;
+    font-size: 20px;
+}
+.content{
+    margin-top: 10px;
+}
