@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpService } from '../../shared/services/http.service';
+import { UploadfileadminService } from '../../shared/services/admin/uploadfileadmin.service';
+import { ToastrService } from 'ngx-toastr';
 declare var $: any;
 
 @Component({
@@ -21,7 +23,7 @@ export class UploadCASComponent implements OnInit {
   isCODPanel:any;
 
 
-  constructor(private router: Router, private httpService : HttpService) { }
+  constructor(private router: Router, private httpService : HttpService, private UploadfileadminService: UploadfileadminService, private toastr: ToastrService) { }
 
   ngOnInit() {
 
@@ -60,24 +62,19 @@ export class UploadCASComponent implements OnInit {
 
 
   uploadFile(uploadUrl){
+      var file = $('#fileUpload')[0].files[0];
+      var formData = new FormData();
+      formData.append("file", file);
+      var data = {}
 
-    var file = $('#fileUpload')[0].files[0];
-    var formData = new FormData();
-    formData.append("file", file);
-    var data = {}
-
-    
-    this.httpService.post('v1/cod/process', formData, data)
-      .subscribe((data:any) => {
-        console.log(data);
-          var fileObj = {
-              name: file.name,
-              file_id: data.file_id
-          };
-          this.fileArry.push(fileObj);
-      });
-
-
+      this.httpService.importFile(formData, uploadUrl)
+      this.UploadfileadminService.uploadFileService(formData, uploadUrl).subscribe(response => {
+        if (response) {
+          this.toastr.success(response.message);
+        } else {
+          this.toastr.success(response.error);
+        }
+    }
   }
 
 

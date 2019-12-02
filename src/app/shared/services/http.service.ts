@@ -26,6 +26,12 @@ export class HttpService {
     });
     return headers;
   }
+  
+
+  getRoleType(contentType) {
+      this.getHeaders()['Role-Type'] = typeof localStorage.USER != 'undefined' ? localStorage.USER.role_type : '';
+      this.getHeaders()['Content-Type'] = typeof contentType == 'undefined' ? undefined : contentType;
+  };
 
 
   /**
@@ -58,6 +64,11 @@ export class HttpService {
     return this.http.patch(CompleteURL, body, { params: paramsData, headers: this.getHeaders(), withCredentials: true });
   }
 
-
+  importFile(data, url) {
+    this.getRoleType("");
+    return this.http.post(`${this.apiBaseUrl}` + url, data, {
+        headers: this.token
+    });
+};
 
 }
