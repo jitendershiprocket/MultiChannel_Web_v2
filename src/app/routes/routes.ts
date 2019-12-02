@@ -23,7 +23,9 @@ export const routes = [
                 path: 'reports',
                 loadChildren: './reports/reports.module#ReportsModule'
             },
-            { path: 'COD-Panel', component: UploadCASComponent }
+            { path: 'COD-Panel', component: UploadCASComponent },
+            { path: 'upload-awbs', component: UploadCASComponent },
+            { path: 'SOW-Panel', component: UploadCASComponent }
         ]
     },
     

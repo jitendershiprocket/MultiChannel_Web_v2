@@ -18,6 +18,7 @@ export class UploadCASComponent implements OnInit {
     headingName: '',
     downloadErrorFileUrl: ''
   };
+  isCODPanel:any;
 
 
   constructor(private router: Router, private httpService : HttpService) { }
@@ -36,21 +37,21 @@ export class UploadCASComponent implements OnInit {
         this.fileUrls.uploadFileUrl = 'courier/upload/sow_target';
         this.fileUrls.sampleFileName = 'sowSample';
         this.fileUrls.headingName = 'SOW Panel';
-        var isCODPanel = 0;
+        this.isCODPanel = 0;
         break;
       case "/upload-awbs":
         this.fileUrls.downloadFileURL = 'orders/sample/prefetch_awbs';
         this.fileUrls.uploadFileUrl = 'courier/upload/prefetched_awbs';
         this.fileUrls.sampleFileName = 'sampleAwbs';
         this.fileUrls.headingName = 'Upload Awbs';
-        var isCODPanel = 0;
+        this.isCODPanel = 0;
         break;
       case "/COD-Panel":
         this.fileUrls.downloadFileURL = 'cod/export/sample';
         this.fileUrls.uploadFileUrl = 'cod/process';
         this.fileUrls.sampleFileName = 'codSample';
         this.fileUrls.headingName = 'COD Panel';
-        var isCODPanel = 1;
+        this.isCODPanel = 1;
         this.fileUrls.downloadErrorFileUrl = 'cod/download/error_file';
         break;
     }
@@ -68,10 +69,12 @@ export class UploadCASComponent implements OnInit {
     
     this.httpService.post('v1/cod/process', formData, data)
       .subscribe((data:any) => {
-          
-      },
-      error => {
-        console.log(error)
+        console.log(data);
+          var fileObj = {
+              name: file.name,
+              file_id: data.file_id
+          };
+          this.fileArry.push(fileObj);
       });
 
 
