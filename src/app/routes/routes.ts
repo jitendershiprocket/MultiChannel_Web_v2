@@ -18,17 +18,33 @@ export const routes = [
         component: LayoutComponent,
         children: [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', loadChildren: './home/home.module#HomeModule'},
+            { path: 'home', loadChildren: './home/home.module#HomeModule' },
             {
                 path: 'reports',
                 loadChildren: './reports/reports.module#ReportsModule'
             },
-            { path: 'COD-Panel', component: UploadCASComponent },
-            { path: 'upload-awbs', component: UploadCASComponent },
-            { path: 'SOW-Panel', component: UploadCASComponent }
+            {
+                path: 'COD-Panel',
+                component: UploadCASComponent,
+                data: {
+                    oldRoute: 'app.codPanel',
+                }
+            },
+            {
+                path: 'upload-awbs', component: UploadCASComponent,
+                data: {
+                    oldRoute: 'app.uploadAwbs',
+                }
+            },
+            {
+                path: 'SOW-Panel', component: UploadCASComponent,
+                data: {
+                    oldRoute: 'app.sowPanel',
+                }
+            }
         ]
     },
-    
+
     // Not lazy-loaded routes
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
@@ -37,13 +53,13 @@ export const routes = [
     { path: 'maintenance', component: MaintenanceComponent },
     { path: '404', component: Error404Component },
     { path: '500', component: Error500Component },
-    
+
 
     // Not found
-    { 
-        path: '**', 
+    {
+        path: '**',
         component: Error404Component,
-        
+
     }
 
 ];

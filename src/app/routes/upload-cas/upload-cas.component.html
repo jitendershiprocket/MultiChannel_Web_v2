@@ -9,7 +9,7 @@
                   <div class="form-group">
                       <label>Upload New File</label>
                       <div>
-                          <p ng-controller="DownloadController" id='codSample' data-name ='codSample' (click)="downloadCSV(fileUrls.downloadFileURL, fileUrls.sampleFileName)">
+                          <p id='codSample' data-name ='codSample' (click)="downloadfile(fileUrls.downloadFileURL, fileUrls.sampleFileName)">
                               <a>Download Sample File</a>
                           </p>
                           <div class="custom-file mb-3">
@@ -38,7 +38,7 @@
                               </button>
                           </td>
                           <td class="text-center" *ngIf="file.hasErrorFile">
-                              <button ng-controller="DownloadController" (click)="downloadCSV(fileUrls.downloadErrorFileUrl, '', false, 1, null, file.error_file_id)" class="mb-sm btn btn-danger" type="button">
+                              <button (click)="downloadfile(fileUrls.downloadErrorFileUrl, '', false, 1, null, file.error_file_id)" class="mb-sm btn btn-danger" type="button">
                                   Download Error File
                               </button>
                           </td>

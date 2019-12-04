@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { HttpService } from '../../shared/services/http.service';
 import { UploadfileadminService } from '../../shared/services/admin/uploadfileadmin.service';
 import { ToastrService } from 'ngx-toastr';
@@ -20,12 +20,13 @@ export class UploadCASComponent implements OnInit {
     headingName: '',
     downloadErrorFileUrl: ''
   };
-  isCODPanel:any;
+  isCODPanel: any;
 
 
-  constructor(private router: Router, private httpService : HttpService, private UploadfileadminService: UploadfileadminService, private toastr: ToastrService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private httpService: HttpService, private UploadfileadminService: UploadfileadminService, private toastr: ToastrService) { }
 
   ngOnInit() {
+
 
     $(".custom-file-input").on("change", function () {
       var fileName = $(this).val().split("\\").pop();
@@ -61,21 +62,56 @@ export class UploadCASComponent implements OnInit {
 
 
 
-  uploadFile(uploadUrl){
-      var file = $('#fileUpload')[0].files[0];
-      var formData = new FormData();
-      formData.append("file", file);
-      var data = {}
+  uploadFile(uploadUrl) {
+    var file = $('#fileUpload')[0].files[0];
+    var formData = new FormData();
+    formData.append("file", file);
+    var data = {}
 
-      this.httpService.importFile(formData, uploadUrl)
-      this.UploadfileadminService.uploadFileService(formData, uploadUrl).subscribe(response => {
-        if (response) {
-          this.toastr.success(response.message);
-        } else {
-          this.toastr.success(response.error);
-        }
-    }
+    this.httpService.importFile(formData, uploadUrl)
+    this.UploadfileadminService.uploadFileService(formData, uploadUrl).subscribe(response => {
+      if (response) {
+        this.toastr.success(response);
+      } else {
+        this.toastr.warning(response.error);
+      }
+    })
   }
+
+
+  downloadfile(url, fileName) {
+    var fileName = $('#' + fileName).data('name') ? $('#' + fileName).data('name') : fileName;
+    fileName = fileName + '.csv';
+    var filters = {}
+      this.UploadfileadminService.downloadFileService(url, filters).subscribe(response => {
+        if (response) {
+          // response.data ? this.toastr.warning(response.data) : this.downloadDataWithUrl(response.download_url, fileName);
+          response.data.message ? this.toastr.warning(response.data.message) : this.downloadDataWithUrl(response.data, fileName);
+        } else {
+          this.toastr.warning(response.error);
+        }
+      })
+
+
+
+
+  }
+
+
+
+downloadDataWithUrl(url, filename) {
+  // Construct the a element
+  
+  if (!url) {
+    return;
+  }
+  
+  window.location.assign(url);
+
+
+
+};
+
 
 
 
