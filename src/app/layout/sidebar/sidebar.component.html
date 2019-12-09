@@ -10,7 +10,7 @@
 
             <li *ngFor='let item of menuItems; index as i' [ngClass]="{'nav-heading': item.heading}" [routerLinkActive]="['active']">
                 <!-- single menu item -->
-                <a href *ngIf="!item.heading && !item.submenu && !item.elink" [routerLink]="item.sref" [attr.route]="item.sref"
+                <a href *ngIf="!item.heading && !item.submenu && !item.elink" [routerLink]="item.url" [attr.route]="item.url"
                     title="{{item.text}}" (click)="toggleSubmenuClick($event)" (mouseenter)="toggleSubmenuHover($event)">
                     <span class="float-right" *ngIf="item.alert" [ngClass]="item.label || 'badge badge-success'">{{item.alert}}</span>
                     <em class="{{item.icon}}" *ngIf="item.icon"></em>
