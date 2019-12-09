@@ -309,8 +309,10 @@ th {
 
 label {
   // Allow labels to use `margin` for spacing.
-  display: inline-block;
-  margin-bottom: $label-margin-bottom;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
 }
 
 // Remove the default `border-radius` that macOS Chrome adds.

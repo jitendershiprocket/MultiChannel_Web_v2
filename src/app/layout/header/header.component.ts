@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
     menuItems = []; // for horizontal layout
 
     isNavSearchVisible: boolean;
+    userData:any;
 
     constructor(public menu: MenuService, public settings: SettingsService) {
 
@@ -28,6 +29,7 @@ export class HeaderComponent implements OnInit {
         var ua = window.navigator.userAgent;
         if (ua.indexOf("MSIE ") > 0 || !!ua.match(/Trident.*rv\:11\./)) { // Not supported under IE
         }
+        this.userData = JSON.parse(localStorage.getItem("ngStorage-USER"));
     }
 
     toggleUserBlock(event) {

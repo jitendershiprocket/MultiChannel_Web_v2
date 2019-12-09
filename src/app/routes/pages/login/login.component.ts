@@ -19,8 +19,6 @@ export class LoginComponent implements OnInit {
             'email': [null, Validators.compose([Validators.required, CustomValidators.email])],
             'password': [null, Validators.required]
         });
-
-
     }
 
     submitForm($ev, value: any) {

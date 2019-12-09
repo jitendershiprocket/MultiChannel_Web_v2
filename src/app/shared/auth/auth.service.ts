@@ -11,7 +11,7 @@ export class AuthService {
     localStorage.setItem("LoggedInUser", token)
   }
   getToken() {
-    return "Mytoken";
+    return 'Bearer ' + localStorage.satellizer_token;
   }
   isLoggednIn() {
     return this.getToken() !== null;

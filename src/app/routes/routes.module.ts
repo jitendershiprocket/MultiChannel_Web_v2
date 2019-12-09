@@ -6,6 +6,7 @@ import { PagesModule } from './pages/pages.module';
 
 import { menu } from './menu';
 import { routes } from './routes';
+import { UploadCASComponent } from './upload-cas/upload-cas.component';
 
 @NgModule({
     imports: [
@@ -13,7 +14,7 @@ import { routes } from './routes';
         RouterModule.forRoot(routes),
         PagesModule
     ],
-    declarations: [],
+    declarations: [UploadCASComponent],
     exports: [
         RouterModule
     ]

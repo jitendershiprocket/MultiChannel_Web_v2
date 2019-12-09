@@ -1,9 +1,9 @@
 <!-- START Top Navbar-->
-<nav class="navbar topnavbar" role="navigation">
+<nav class="navbar" role="navigation">
    <!-- START navbar header-->
    <div class="navbar-header">
       <a class="navbar-brand ml-10" href="#/">
-         <img class="img-fluid" src="assets/img/logo-v1-2.png" alt="App Logo" />
+         <img class="img-fluid" src="assets/img/logo-v1-2.png" alt="App Logo" style="height: 27px" />
       </a>
    </div>
    <!-- END navbar header-->
@@ -25,54 +25,39 @@
    <!-- START Right Navbar-->
    <ul class="navbar-nav flex-row">
       <!-- START Alert menu-->
-      <li class="nav-item dropdown dropdown-list" dropdown>
-         <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" dropdownToggle>
+      <li>
+         <a href="javascript:void(0);" ng-click="track()" class="track_link mr">Track your shipment</a>
+      </li>
+      <li class="clearfix ml-lg">
+         <button class="btn bg-dark-blue button btn-sm col-xs-12" type="button" ng-click="create_ticket1()">
+            Freshdesk
+         </button>
+      </li>
+      <li class="nav-item dropdown dropdown-list topdropdown" dropdown>
+         <!-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" dropdownToggle>
             <em class="fa fa-user-circle fa-2x"></em> 
-         </a>
-         <!-- START Dropdown menu-->
-         <div *dropdownMenu class="dropdown-menu dropdown-menu-right animated flipInX">
-            <div class="dropdown-item">
-               <!-- START list group-->
-               <div class="list-group">
-                  <!-- list item-->
-                  <div class="list-group-item list-group-item-action">
-                     <div class="media">
-                        <div class="align-self-start mr-2">
-                           <em class="fa fa-user fa-2x text-info"></em>
-                        </div>
-                        <div class="media-body">
-                           <p class="m-0">Profile</p>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- list item-->
-                  <div class="list-group-item list-group-item-action">
-                     <div class="media">
-                        <div class="align-self-start mr-2">
-                           <em class="fa fa-tasks fa-2x text-success"></em>
-                        </div>
-                        <div class="media-body">
-                           <p class="m-0">Activities</p>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- list item-->
-                  <div class="list-group-item list-group-item-action">
-                     <div class="media">
-                        <div class="align-self-start mr-2">
-                           <em class="fa fa-power-off fa-2x text-warning"></em>
-                        </div>
-                        <div class="media-body">
-                           <p class="m-0">Logout</p>
-                        </div>
-                     </div>
-                  </div>
-
-               </div>
-               <!-- END list group-->
+         </!-->
+         <div class="dropdown" style="float:right;">
+            <a href="" class="dropbtn">
+               <em class="icon-user"></em>
+               <span class="pl-sm truncate"> {{userData.company_name}}</span>
+               <span class="caret"></span>
+            </a>
+            <div class="dropdown-content">
+               <a href="/user-page">
+                  <em class="fa fa-user mr-sm"></em>
+                  <span class="text-sm"> Hello {{userData.first_name}}</span>
+               </a>
+               <a href="/change-password">
+                  <em class="fa fa-key"></em>
+                  <span class="text-sm"> Change Password</span>
+               </a>
+               <a href="/logout">
+                  <em class="fa fa-power-off"></em>
+                  <span class="text-sm"> Logout</span>
+               </a>
             </div>
-         </div>
-         <!-- END Dropdown menu-->
+          </div>
       </li>
       <!-- END Alert menu-->
    </ul>
