@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { SettingsService } from '../../core/settings/settings.service';
 import { MenuService } from '../../core/menu/menu.service';
+import { AuthService } from '../../shared/auth/auth.service';
 
 @Component({
     selector: 'app-header',
@@ -16,11 +17,10 @@ export class HeaderComponent implements OnInit {
     isNavSearchVisible: boolean;
     userData:any;
 
-    constructor(public menu: MenuService, public settings: SettingsService) {
+    constructor(public menu: MenuService, public settings: SettingsService, public authService: AuthService) {
 
         // show only a few items on demo
         this.menuItems = menu.getMenu().slice(0, 4); // for horizontal layout
-
     }
 
     ngOnInit() {
@@ -30,6 +30,10 @@ export class HeaderComponent implements OnInit {
         if (ua.indexOf("MSIE ") > 0 || !!ua.match(/Trident.*rv\:11\./)) { // Not supported under IE
         }
         this.userData = JSON.parse(localStorage.getItem("ngStorage-USER"));
+    }
+
+    logout(){
+        this.authService.logout();
     }
 
     toggleUserBlock(event) {

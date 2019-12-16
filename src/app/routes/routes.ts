@@ -10,6 +10,7 @@ import { Error500Component } from './pages/error500/error500.component';
 import { RouterConfigLoader } from '@angular/router/src/router_config_loader';
 import { RouterLinkActive, Router } from '@angular/router';
 import { UploadCASComponent } from './upload-cas/upload-cas.component';
+import { RedirecttojsComponent } from './pages/redirecttojs/redirecttojs.component';
 
 export const routes = [
 
@@ -58,7 +59,7 @@ export const routes = [
     // Not found
     {
         path: '**',
-        component: Error404Component,
+        component: RedirecttojsComponent,
 
     }
 
