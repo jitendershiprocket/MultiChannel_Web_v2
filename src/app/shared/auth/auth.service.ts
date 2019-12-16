@@ -17,7 +17,12 @@ export class AuthService {
     return this.getToken() !== null;
   }
   logout() {
-    localStorage.removeItem("LoggedInUser");
-    this.myRoute.navigate(["login"]);
+    // localStorage.removeItem("LoggedInUser");
+    // this.myRoute.navigate(["login"]);
+    delete localStorage.USER;
+    delete localStorage.menuItems;
+    delete localStorage.channelErrorShown;
+    delete window.localStorage.satellizer_token;
+    window.location.href = "http://dev-web.kartrocket.com/login";
   }
 }

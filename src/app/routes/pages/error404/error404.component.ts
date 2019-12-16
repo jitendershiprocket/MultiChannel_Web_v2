@@ -12,12 +12,12 @@ export class Error404Component implements OnInit {
 
   ngOnInit() {
 
-    console.log(window.location.host, 'hst');
+    // console.log(window.location.host, 'hst');
 
-    var url = window.location.href;
-    var finalurl = url.replace(/v2\//g, "");
-    var dec = decodeURIComponent(finalurl);
-    window.location.href = dec;
+    // var url = window.location.href;
+    // var finalurl = url.replace(/v2\//g, "");
+    // var dec = decodeURIComponent(finalurl);
+    // window.location.href = dec;
   }
 
 }
