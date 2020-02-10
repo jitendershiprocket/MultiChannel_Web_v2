@@ -2,7 +2,7 @@
 <nav class="navbar" role="navigation">
    <!-- START navbar header-->
    <div class="navbar-header">
-      <a class="navbar-brand ml-10" href="#/">
+      <a class="navbar-brand ml-10" href="../dashboard">
          <img class="img-fluid" src="assets/img/logo-v1-2.png" alt="App Logo" style="height: 27px" />
       </a>
    </div>
@@ -25,23 +25,23 @@
    <!-- START Right Navbar-->
    <ul class="navbar-nav flex-row">
       <!-- START Alert menu-->
-      <li>
-         <a href="javascript:void(0);" ng-click="track()" class="track_link mr">Track your shipment</a>
+      <li class="mt-1 ml-10">
+         <a href="javascript:void(0);" ng-click="track()" class="track_link mr text-grey">Track your shipment</a>
       </li>
-      <li class="clearfix ml-lg">
+      <li class="clearfix ml-lg ml-10">
          <button class="btn bg-dark-blue button btn-sm col-xs-12" type="button" ng-click="create_ticket1()">
             Freshdesk
          </button>
       </li>
-      <li class="nav-item dropdown dropdown-list topdropdown" dropdown>
+      <li class="nav-item dropdown dropdown-list topdropdown ml-10" dropdown>
          <!-- <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" dropdownToggle>
             <em class="fa fa-user-circle fa-2x"></em> 
          </!-->
          <div class="dropdown" style="float:right;">
             <a href="" class="dropbtn">
-               <em class="icon-user"></em>
+               <em class="icon-user mr-1"></em>
                <span class="pl-sm truncate"> {{userData.company_name}}</span>
-               <span class="caret"></span>
+               <span class="fa fa-caret-down ml-10"></span>
             </a>
             <div class="dropdown-content">
                <a href="/user-page">
@@ -52,7 +52,7 @@
                   <em class="fa fa-key"></em>
                   <span class="text-sm"> Change Password</span>
                </a>
-               <a href="javascript:void(0)" (click)="logout()">
+               <a href="../logout">
                   <em class="fa fa-power-off"></em>
                   <span class="text-sm"> Logout</span>
                </a>

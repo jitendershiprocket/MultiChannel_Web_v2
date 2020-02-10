@@ -28,6 +28,22 @@
 //== Application
 @import "./app/shared/styles/app.scss";
 
+$brand-primary:          #285fdb;
+$amountOfLight: 10%;
+$brand-primary-light:          lighten($brand-primary, $amountOfLight);
+
+
+.btn-cancel,.btn-cancel:hover{border:2px dashed red;color: red;padding: 5px 40px;background: #fff;min-width: 145px;font-weight: bold;}
+.btn-act,.btn-act:hover{border:2px dashed green;color: green;padding: 5px 40px;background: #fff;min-width: 145px;font-weight: bold;}
+.btn-inact,.btn-inact:hover{border:2px dashed #989898;color: #989898;padding: 5px 40px;background: #fff;min-width: 145px;font-weight: bold;}
+.btn-pending,.btn-pending:hover{border:2px dashed #285fdb;color:#285fdb;padding:5px 40px;background:#fff;min-width:145px;font-weight:bold;}.img-hold{height:70px;}
+.bg-dark-blue{background-color: $brand-primary !important; color: #fff;}
+.bg-light-blue{background-color: $brand-primary-light !important; color: #fff;}
+.text-grey{
+    color: #555555;
+}
+
+
 
 .header-wrapper {
     clear: both;
