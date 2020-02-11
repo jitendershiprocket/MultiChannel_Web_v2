@@ -7,8 +7,8 @@
 @import "../../shared/styles/app/variables";
 
 $preloader-bg: $lightblack;
-$preloader-wd: 65px;
-$preloader-hg: 65px;
+$preloader-wd: 35px;
+$preloader-hg: 35px;
 
 /*@noflip*/
 .preloader {
@@ -36,7 +36,11 @@ $preloader-hg: 65px;
     height: $preloader-hg;
     margin: auto;
     overflow: auto;
+    height: 35px;
+    width: 35px;
+    border-radius: 3px;
     background-image: url(../../../assets/img/preloader/preloader.gif);
+    background-repeat: no-repeat;
     background-size: $preloader-wd $preloader-hg;
 }
 

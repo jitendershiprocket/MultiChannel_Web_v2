@@ -102,3 +102,7 @@ $brand-primary-light:          lighten($brand-primary, $amountOfLight);
 .testing{
     color: #333;
 }
+.preload_customClass{
+    padding: 10px;
+    background-color: #000;
+}
