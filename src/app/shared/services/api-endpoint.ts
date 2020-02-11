@@ -1,3 +1,3 @@
 export class API_ENDPOINT {
-    public static BASE_PATH = 'https://krmct000.kartrocket.com/v1/';
+    public static BASE_PATH = 'http://krmct000.kartrocket.com/v1/';
 }
