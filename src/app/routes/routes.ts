@@ -31,18 +31,18 @@ export const routes = [
                     oldRoute: 'app.codPanel',
                 }
             },
-            {
-                path: 'upload-awbs', component: UploadCASComponent,
-                data: {
-                    oldRoute: 'app.uploadAwbs',
-                }
-            },
-            {
-                path: 'SOW-Panel', component: UploadCASComponent,
-                data: {
-                    oldRoute: 'app.sowPanel',
-                }
-            }
+            // {
+            //     path: 'upload-awbs', component: UploadCASComponent,
+            //     data: {
+            //         oldRoute: 'app.uploadAwbs',
+            //     }
+            // },
+            // {
+            //     path: 'SOW-Panel', component: UploadCASComponent,
+            //     data: {
+            //         oldRoute: 'app.sowPanel',
+            //     }
+            // }
         ]
     },
 
