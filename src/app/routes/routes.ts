@@ -31,6 +31,7 @@ export const routes = [
                     oldRoute: 'app.codPanel',
                 }
             },
+            //additional testing module
             // {
             //     path: 'upload-awbs', component: UploadCASComponent,
             //     data: {
